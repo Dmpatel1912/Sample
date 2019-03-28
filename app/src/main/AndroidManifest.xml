@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.projectactivity.deep.sample">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/h2h_logo"
+        android:label="Happy To Help"
+        android:roundIcon="@mipmap/h2h_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label">
+        <activity android:name=".EditcomplainActivity"></activity>
+        <activity android:name=".DynamicView" />
+        <activity android:name=".ScanCodeActivity" />
+        <activity
+            android:name=".FAQActivity"
+            android:label="FAQs" />
+        <!--
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".Calculator" />
+        -->
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ComplainActivity"
+            android:label="ComplainBox" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="FeedbackBox" />
+        <activity android:name=".EndActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".AdminLoginActivity"
+            android:label="@string/title_activity_admin_login" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

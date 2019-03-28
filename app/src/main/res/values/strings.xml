@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Sample</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="registration">Registration</string>
+    <string name="your_surname">your surname</string>
+    <string name="submit">Submit</string>
+    <string name="password_must_be_same">Password must be same</string>
+    <string name="alphabatic_and_numeric">alphabatic and numeric</string>
+    <string name="re_password">Re-Password</string>
+    <string name="password">password</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="userid">userID</string>
+    <string name="last_name">last name</string>
+    <string name="your_father_name">your father name</string>
+    <string name="middle_name">middle name</string>
+    <string name="your_name">your name</string>
+    <string name="first_name">first name</string>
+    <string name="a1">a1</string>
+    <string name="name">Name</string>
+    <string name="textview">TextView</string>
+    <string name="title_activity_admin_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="todo">TODO</string>
+    <string name="welcome">WELCOME</string>
+    <string name="hgce_logo">hgce_logo</string>
+
+    <string-array name="types">
+        <item>Computer</item>
+        <item>Civil</item>
+        <item>Electrical</item>
+        <item>IT</item>
+        <item>Mechanical</item>
+        <item>Workshop</item>
+        <item>Lab</item>
+        <item>Other</item>
+    </string-array>
+</resources>

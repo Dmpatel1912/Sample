@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/complainpage2_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".DynamicView">
+
+    <ScrollView
+        android:id="@+id/complainpage2_scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/com2_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/viewfinder_mask"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/second_com_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="complain_2 :"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <RelativeLayout
+                android:id="@+id/comtype2_relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/type2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/type2_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@android:color/white"
+                        android:padding="5dp"
+                        android:text="Complain Type 2 :"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <Spinner
+                        android:id="@+id/spinner_type2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_dropdown" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/discrip2_relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/discrip2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/discrip2_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/white"
+                        android:padding="5dp"
+                        android:text="Complain Detail2 :"
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+                    <EditText
+                        android:id="@+id/discription_txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/editbox_background"
+                        android:ems="20"
+                        android:hint="text your complain here"
+                        android:inputType="textMultiLine"
+                        android:overScrollMode="always"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
